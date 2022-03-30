@@ -52,8 +52,8 @@ ft_defaults
 set(groot,'defaultFigureCreateFcn',@(fig,~)addToolbarExplorationButtons(fig))
 set(groot,'defaultAxesCreateFcn',@(ax,~)set(ax.Toolbar,'Visible','off'))
 %% Load data for 2 sessions
-Session1                   =      [Drive_Letter,'Vasileios\Task Analysis\Data\Macro Data\Macro_Data_Sessions_Patient_42_Session_01_Part_01'];
-Session2                   =        [Drive_Letter,'Vasileios\Task Analysis\Data\Macro Data\Macro_Data_Sessions_Patient_42_Session_02_Part_01'];
+Session1                   =      [Drive_Letter,'Vasileios\Task Analysis\Data\Macro Data\Macro_Data_Sessions_Patient_1_Session_01_Part_01'];
+Session2                   =        [Drive_Letter,'Vasileios\Task Analysis\Data\Macro Data\Macro_Data_Sessions_Patient_1_Session_02_Part_01'];
 data_s1                    =      load(Session1);
 data_s2                    =      load(Session2);
 TrialInformationTable      =      [data_s1.TrialInformationTable;data_s2.TrialInformationTable] ;
@@ -62,8 +62,8 @@ data_s2                    =      data_s2.dataMacro;
 
 
 %% Load scalp data for 2 sessions
-Sclp_Session1                    =      [Drive_Letter,'Vasileios\Task Analysis\Data\Scalp_Data\Scalp_Data_Sessions_Patient_42_Session_01_Part_01'];
-Sclp_Session2                    =      [Drive_Letter,'Vasileios\Task Analysis\Data\Scalp_Data\Scalp_Data_Sessions_Patient_42_Session_02_Part_01'];
+Sclp_Session1                    =      [Drive_Letter,'Vasileios\Task Analysis\Data\Scalp_Data\Scalp_Data_Sessions_Patient_1_Session_01_Part_01'];
+Sclp_Session2                    =      [Drive_Letter,'Vasileios\Task Analysis\Data\Scalp_Data\Scalp_Data_Sessions_Patient_1_Session_02_Part_01'];
 data_s1_scalp                    =      load(Sclp_Session1);
 data_s2_scalp                    =      load(Sclp_Session2);
 TrialInformationTable_Scalp      =      [data_s1_scalp.TrialInformationTable;data_s2_scalp.TrialInformationTable] ;
