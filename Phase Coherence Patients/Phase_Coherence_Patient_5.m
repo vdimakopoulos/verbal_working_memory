@@ -53,7 +53,7 @@ set(groot,'defaultFigureCreateFcn',@(fig,~)addToolbarExplorationButtons(fig))
 set(groot,'defaultAxesCreateFcn',@(ax,~)set(ax.Toolbar,'Visible','off'))
 
 %% Load data for 4 sessions - Macro Data
-strMacroDataDir = [Drive_Letter,'Vasileios\Task Analysis\Data\Sternberg Task\Sessions\Macro Data\44 MJ\'];
+strMacroDataDir = [Drive_Letter,'Vasileios\Task Analysis\Data\Sternberg Task\Sessions\Macro Data\Patient 5\'];
 cd (strMacroDataDir);
 files = dir('*.mat'); %try to look for all the .mat files under the folder
 for i=1:length(files)
@@ -67,7 +67,7 @@ end
 
 
 %% Load data for 4 sessions - Scalp Data
-strScalpDataDir = [Drive_Letter,'Vasileios\Task Analysis\Data\Sternberg Task\Sessions\Scalp Data\44 MJ\'];
+strScalpDataDir = [Drive_Letter,'Vasileios\Task Analysis\Data\Sternberg Task\Sessions\Scalp Data\Patient 5\'];
 cd (strScalpDataDir);
 files = dir('*.mat'); %try to look for all the .mat files under the folder
 for i=1:length(files)
