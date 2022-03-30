@@ -54,7 +54,7 @@ set(groot,'defaultAxesCreateFcn',@(ax,~)set(ax.Toolbar,'Visible','off'))
 
 
 %% Load data for 8 sessions - Macro Data
-strMacroDataDir = [Drive_Letter,'Vasileios\Task Analysis\Data\Sternberg Task\Sessions\Macro Data\40 DG\'];
+strMacroDataDir = [Drive_Letter,'Vasileios\Task Analysis\Data\Sternberg Task\Sessions\Macro Data\Patient 4\'];
 cd (strMacroDataDir);
 files = dir('*.mat'); %try to look for all the .mat files under the folder
 for i=1:length(files)
@@ -68,7 +68,7 @@ end
 
 
 %% Load data for 8 sessions - Scalp Data
-strScalpDataDir = [Drive_Letter,'Vasileios\Task Analysis\Data\Sternberg Task\Sessions\Scalp Data\40 DG\'];
+strScalpDataDir = [Drive_Letter,'Vasileios\Task Analysis\Data\Sternberg Task\Sessions\Scalp Data\Patient 4\'];
 cd (strScalpDataDir);
 files = dir('*.mat'); %try to look for all the .mat files under the folder
 for i=1:length(files)
