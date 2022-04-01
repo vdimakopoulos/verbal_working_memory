@@ -15,37 +15,56 @@ In the task, sets of consonants are presented and had to be memorized. The set s
 
 ##### 2. Power Spectral Density (PSD)
 ├── Multitaper time-frequency transformation
+
 ├── PSD computation during encoding and maintenance  in hippocampal LFP, temporal ECoG and scalp EEG channels
+
 ├── Baseline against fixation 
 
 ##### 3. Functional Connectivity
 ├──  Phase locking value (PLV) calculation between  all pairs of hippocampal LFP and ECoG grid channels.
+
 ├──── Multitaper frequency transformation with 2 tapers using FFT,  (frequency resolution = 1 Hz)
 
 ##### 4. Source reconstruction of EEG using beamforming
 ├──  Forward problem 
+
 ├──── > Precomputed BEM head-model with 3 compartments (scalp,skull,brain)
+
 ├──── > EEG electrodes alignment to the scalp compartment
+
 ├──── > Determine  source grid locations acoording to AAL parcel
+
 ├──── > Source model and leadfield computation
+
 ├── Inverse problem 
+
 ├──── > Linearly constrained minimum variance beamformers
+
 ├──── > Reconstruction separate for fixation/encoding /maintenance
+
 ├──── > Baseline encoding/maintenance sources against fixation sources
 
 ##### 5. Spectral Granger causality (GC)
 Evaluation of GC in the range [4 30] Hz
 ├── > Downsample the signals to 2*Nyquist frequency = 60 Hz
+
 ├── > Frequency transformation using multitaper FFT method with 2 Hann tapers, 20 seconds of padding
+
 ├── >  Non parametric spectral factorization  method for GC
+
 ├── >  GC between  hippocampal LFP and beamforming EEG sources 
 
 ##### 6. Statistics
 ├── >  Cluster-based nonparametric permutation tests
+
 ├── >  GC differences comparison to null distribution of differences
+
 ├── >  To test the statistical significance of the  spatial spread of contacts with high PSD/PLV/GC we computed the spatial collinearity on grid contacts agains null distribution
+
 ├── > Significant  beamforming EEG sources during encoding and maintenance are tested against fixation  with non-parametric permutation t-test
+
 ├── >  Group statistics to assess the direction of information flow  using group cluster based permutation t-test from FieldTrip
+
 ### Research Papers
 [1] Persistent hippocampal neural firing and hippocampal-cortical coupling predict verbal working memory load
 Boran E, Klaver P, Hilfiker P, Stieglitz L, Grunwald T, Sarnthein J, Science Advances 2019, Vol.5, Issue 3, doi: https://doi.org/10.1126/sciadv.aav3687 
