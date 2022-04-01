@@ -65,9 +65,11 @@ Evaluation of GC in the range [4 30] Hz
 
 ├── >  Group statistics to assess the direction of information flow  using group cluster based permutation t-test from FieldTrip
 
+
 ### Research Papers
 [1] Persistent hippocampal neural firing and hippocampal-cortical coupling predict verbal working memory load
 Boran E, Klaver P, Hilfiker P, Stieglitz L, Grunwald T, Sarnthein J, Science Advances 2019, Vol.5, Issue 3, doi: https://doi.org/10.1126/sciadv.aav3687 
+
 [2] Information flows from hippocampus to auditory cortex during replay of verbal working memory items, Vasileios Dimakopoulos, Pierre Mégevand, Lennart Stieglitz, Lukas Imbach, Johannes Sarnthein, bioRxiv 2021.03.11.434989; doi: https://doi.org/10.1101/2021.03.11.434989
 #### This code has been written by 
 Vasileios Dimakopoulos (Vasileios.Dimakopoulos@usz.ch)
