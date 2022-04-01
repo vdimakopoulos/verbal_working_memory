@@ -6,8 +6,11 @@ In the task, sets of consonants are presented and had to be memorized. The set s
 ## Analysis steps
 ##### 1. Data Preprocessing
 ├── Appy bipolar montage  in  LFP channels
+
 ├── Rereference  hippocampal LFP and temporal ECoG  using separate iEEG contacts
+
 |──  Resample the data to 500 Hz
+
 |──  Reject large unitary artifacts in scalp EEG recordings
 
 ##### 2. Power Spectral Density (PSD)
